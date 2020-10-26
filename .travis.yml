@@ -18,6 +18,9 @@ jobs:
   exclude:
     - rvm: 2.7.1
       gemfile: gemfiles/rails-edge.gemfile
+  allow_failures:
+    - rvm: 3.0.0-preview1
+      gemfile: gemfiles/rails-edge.gemfile
 
 notifications:
   email: false
